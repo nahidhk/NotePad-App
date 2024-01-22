@@ -1,0 +1,67 @@
+body {
+ margin: 10px;
+}
+.inputbox{
+  height: 40px;
+  border: none;
+  outline: none;
+}
+.inputbox1{
+  height: auto;
+  width: 100%;
+  font-size: 30px;
+  border: none;
+  outline: none;
+   font-size: 15pt;
+ font-size: 15pt;
+ font-family: sans-serif;
+
+}
+.inputbox2{
+ height: 100vh;
+ width: 100%;
+ border: none;
+ outline: none;
+ font-family: sans-serif;
+ font-size: 15pt;
+}
+.bottom-nav{
+  height: 60px;
+  width: 100%;
+  background-color: #F0F0F0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+button{
+  cursor: pointer;
+  color: #4680ff;
+  background-color: #F0F0F000;
+  font-size: 18px;
+  border: none;
+}
+.btn-all{
+  display: none;
+  padding-top: 10px;
+  text-align: center;
+  height: 120px;
+  width: 160px;
+  background-color: #D3D3D3;
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  border-radius: 10px;
+}
+.vcc {display: none;}
+.b1{
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  color: #FF0000;
+}
+.b2{
+   position: absolute;
+   top: 15px;
+   right: 40px; 
+}
