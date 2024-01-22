@@ -4,7 +4,6 @@ var date = document.getElementById("date");
 
 var title = document.getElementById("title5");
 
-
 var note = document.getElementById("note");
 
 function dateset() {
@@ -101,27 +100,6 @@ function WhichButton(event) {
   
   /// The TXT Download Function
   
-  
-  
-function downloadTextFile() {
-// Get values from input fields
-      var dateValue = bdate;
-      var titleValue = rust;
-      var noteValue = servernote;
-
-      // Create a blob with the text content
-      var textContent = "Date: " + dateValue + "\nTitle: " + titleValue + "\nNote: " + noteValue;
-      var blob = new Blob([textContent], { type: 'text/plain' });
-
-      // Create a link element and trigger the download
-      var a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = titleValue+'.txt';
-      a.click();
-    }
-    
-    
-    
     
 /// server Router data seVER//
   var servernote = localStorage.getItem('note');
@@ -132,5 +110,25 @@ var data1 = bdate;
 var data2 = rust;
 var data3 = servernote;
 //// END DATA LINE ////
+
+
+function downloadTextFile() {
+  window.location.href="index.html"
+  // Get values from input fields
+        var dateValue = data1;
+        var titleValue = data2;
+        var noteValue = data3;
+  
+        // Create a blob with the text content
+        var textContent = "Date: " + dateValue + "\nTitle: " + titleValue + "\nNote: " + noteValue;
+        var blob = new Blob([textContent], { type: 'text/plain' });
+  
+        // Create a link element and trigger the download
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = titleValue+'.txt';
+        a.click();
+      }
+      
 
 
