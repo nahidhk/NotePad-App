@@ -42,11 +42,11 @@ button{
   border: none;
 }
 .btn-all{
-  display: none;
+ 
   padding-top: 10px;
   text-align: center;
-  height: 120px;
-  width: 160px;
+  height: 170px;
+  width: 170px;
   background-color: #D3D3D3;
   position: fixed;
   bottom: 70px;
@@ -64,4 +64,15 @@ button{
    position: absolute;
    top: 15px;
    right: 40px; 
+}
+.html-box{
+  height: 430px;
+  width: 320px;
+  background-color: #fff;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 black;
 }

@@ -6,6 +6,9 @@ var title = document.getElementById("title5");
 
 var note = document.getElementById("note");
 
+function loapp(){
+  window.location.href="index.html"
+}
 function dateset() {
   var today = new Date();
 
@@ -31,7 +34,6 @@ function backdate() {
 
 }
 backdate();
-
 function savetitle() {
 var titleData =  document.getElementById("title5").value;
   localStorage.setItem('title', titleData);
@@ -82,15 +84,12 @@ function WhichButton(event) {
 }*/
 
   function youri(){
-    document.getElementById("sider").style.display="block";
-    document.getElementById("cabtn").style.display="block"
-        document.getElementById("dbtn").style.display="none"
-
+  // download btn
+  window.location.href="server.html"
   }
   function cansale(){
-        document.getElementById("sider").style.display="none";
- document.getElementById("cabtn").style.display="none"
-        document.getElementById("dbtn").style.display="block"
+  //cancel btn  
+    window.location.href="index.html"
 
   }
   
@@ -105,15 +104,19 @@ function WhichButton(event) {
   var servernote = localStorage.getItem('note');
   var rust = localStorage.getItem('title');
   var bdate = localStorage.getItem("1date");
-
+  
+  
 var data1 = bdate;
 var data2 = rust;
 var data3 = servernote;
-//// END DATA LINE ////
 
+//// END DATA LINE ///
 
+//alert(date.value);
+//alert(note.value);
+//alert(title.value);
 function downloadTextFile() {
-  window.location.href="index.html"
+ 
   // Get values from input fields
         var dateValue = data1;
         var titleValue = data2;
@@ -128,7 +131,30 @@ function downloadTextFile() {
         a.href = URL.createObjectURL(blob);
         a.download = titleValue+'.txt';
         a.click();
-      }
+        
+ }
       
+function htmlCopy(){
+ var bbc =  document.getElementById("htmlc");
+ bbc.value=`<div><br><br>
+  <center>
+    <span style="color: #4680ff;font-size: 30px;">`+data2+`</span>
+  </center> 
+
+    <blockquote>
+      <var style="opacity: 0.6;font-size: 13px;">`+data1+`</var>
+<br> 
+<p style="font-size: 15px;">`+data3+`</p>
+    </blockquote>
+  </div>
+  `
+}
+htmlCopy();
 
 
+function chtml(){
+ document.getElementById("data34").style.display="block";
+  document.getElementById("sider").style.display="none";
+
+ 
+}

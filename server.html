@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title id="titlehand">1 Note Pade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  Date: <input onclick="loapp()" oninput="setstoreg()" placeholder="date" class="inputbox" type="text" id="date">
+  <br>
+  
+  <textarea onclick="loapp()" oninput="savetitle()" placeholder="Note Tittle" title="This is input your Note Title" class="inputbox1" id="title5"></textarea>
+  
+  <br>
+  <textarea onclick="loapp()" placeholder="Tap to type your Note" oninput="onnote()" class="inputbox2" id="note"></textarea>
+  
+  <section id="sider" class="btn-all">
+    <button>
+      Save PDF
+    </button>
+    <br><br>
+    <button onclick="downloadTextFile()">
+      Download TXT 
+    </button>
+    <br><br>
+    <button onclick="chtml()">
+      Copy HTML
+    </button><br><br>
+    <button>Create Markdown</button>
+    
+  </section>
+  
+ <section id="data34" class="html-box vcc">
+   <center>
+     <h3>HTML Copy code!</h3>
+     <textarea id="htmlc" style="height: 300px;width: 90%;outline: none;"></textarea>
+   </center>
+   <br>
+    <button style="width: 100px;">Help</button>
+ 
+ <button style="position: relative;left: 140px;">Copy</button>
+ 
+  </section>
+  
+  <section class="bottom-nav">
+    
+  
+   
+   
+    <button class="b2" id="cabtn"  onclick="cansale()">
+      cancel 
+    </button>
+    
+  </div>  
+  </section>
+  <script src="app.js"></script>
+</body>
+
+</html>
