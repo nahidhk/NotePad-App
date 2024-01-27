@@ -158,3 +158,20 @@ function chtml(){
 
  
 }
+
+
+function HtmlCopyu(){
+  var myHtml = document.getElementById("htmlc");
+  
+  myHtml.select();
+  
+ myHtml.setSelectionRange(0, 99999); 
+ 
+ navigator.clipboard.writeText(myHtml.value);
+ document.getElementById("copybtnhtml").innerHTML="Copyed!"
+setTimeout(runpr,500)  
+}
+function runpr(){
+ window.location.href="index.html"
+  
+}
